@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PM2.5 and PM10 Concentration Maps</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .map-container {
+            width: 100%;
+            height: 1000px;
+            border: 2px solid #ddd;
+            margin: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: darkblue;
+        }
+        h2 {
+            text-align: center;
+            color: #555;
+        }
+        .maps-row {
+            display: flex;
+            justify-content: space-between;
+            width: 90%;
+            margin: 20px 0;
+        }
+        .map-column {
+            flex: 1;
+            margin: 20px;
+        }
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Air Quality Maps</h1>
+    <h2>PM2.5 and PM10 Concentration Over Time in Kathmandu Valley</h2>
+
+    <div class="maps-row">
+        <div class="map-column">
+            <div class="map-container">
+                <iframe src="map2.5.html" frameborder="0"></iframe>
+            </div>
+        </div>
+
+        <div class="map-column">
+            <div class="map-container">
+                <iframe src="map10.html" frameborder="0"></iframe>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2025 <a href="https://github.com/Indrapdl" target="_blank">Indra Paudel</a>. All rights reserved.</p>
+    </footer>
+</body>
+</html>
